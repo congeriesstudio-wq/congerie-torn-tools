@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://congerie-torn-tools.vercel.app/sitemap.xml
