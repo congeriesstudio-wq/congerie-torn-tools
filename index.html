@@ -1,67 +1,73 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#090a0d">
-  <meta name="description" content="Torn Tools — utilities, updates and downloads for the Congerie Torn client.">
-  <title>Torn Tools — Congerie</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080a0e">
+<meta name="description" content="Torn Tools by Congerie — a clean home for the Congerie Torn client, player utilities, updates and resources.">
+<title>Torn Tools — Congerie</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="grain"></div>
-  <header class="nav">
-    <a class="brand" href="#top" aria-label="Torn Tools home"><span class="brand-mark">T</span><span>Torn Tools</span></a>
-    <nav>
-      <a href="#download">Client</a>
-      <a href="#tools">Tools</a>
-      <a href="#updates">Updates</a>
-    </nav>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="eyebrow"><span class="dot"></span> Congerie · Torn utilities</div>
-      <h1>Torn tools,<br><em>without the clutter.</em></h1>
-      <p class="hero-copy">A focused home for the Congerie Torn client, useful utilities, release notes, and future tools.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="#download">Get the client <span>↓</span></a>
-        <a class="button secondary" href="#tools">Explore tools <span>→</span></a>
-      </div>
-      <div class="status-row"><span class="status-pill"><span class="pulse"></span> Private beta</span><span>Built by Congerie Studios</span></div>
-    </section>
-
-    <section class="section" id="download">
-      <div class="section-heading"><span>01</span><div><p class="kicker">THE CLIENT</p><h2>Congerie for Torn</h2></div></div>
-      <div class="download-card">
-        <div><div class="card-label">ANDROID CLIENT</div><h3>Current beta</h3><p>A native Torn companion focused on a clean, fast interface and useful player views.</p></div>
-        <div class="version"><strong>0.1.2</strong><span>build 3</span></div>
-        <a class="button primary disabled" href="#" aria-disabled="true">Download coming soon</a>
-      </div>
-    </section>
-
-    <section class="section" id="tools">
-      <div class="section-heading"><span>02</span><div><p class="kicker">TOOLS</p><h2>Made for Torn players</h2></div></div>
-      <div class="tool-grid">
-        <article class="tool-card"><span class="tool-number">01</span><h3>Client</h3><p>Dashboard, profile, travel, bars, inventory, faction and market views.</p><span class="tag">IN BETA</span></article>
-        <article class="tool-card"><span class="tool-number">02</span><h3>Player tools</h3><p>Small utilities for checking information and making everyday Torn tasks easier.</p><span class="tag muted">PLANNED</span></article>
-        <article class="tool-card"><span class="tool-number">03</span><h3>More coming</h3><p>New tools will be added here as the client grows.</p><span class="tag muted">PLANNED</span></article>
-      </div>
-    </section>
-
-    <section class="section" id="updates">
-      <div class="section-heading"><span>03</span><div><p class="kicker">UPDATES</p><h2>Always know what's new</h2></div></div>
-      <div class="update-card">
-        <div><span class="tag">CURRENT</span><h3>Build 3 · Client foundation</h3><p>Core Torn connection, live player data, responsive navigation, feature views, and secure automatic update support.</p></div>
-        <div class="update-meta"><span>0.1.2</span><small>September 2026</small></div>
-      </div>
-      <div class="notice"><span>i</span><p>The automatic updater is already built into the Android client. This site will host the public update manifest and APK once the release file is connected.</p></div>
-    </section>
-  </main>
-
-  <footer><span>© 2026 Congerie Studios</span><span>Torn Tools</span></footer>
+<div class="grain"></div>
+<div class="cursor-glow" aria-hidden="true"></div>
+<header class="nav" id="top">
+  <a class="brand" href="#top" aria-label="Torn Tools home"><span class="brand-mark">T</span><span>Torn Tools</span></a>
+  <nav class="desktop-nav" aria-label="Primary navigation">
+    <a href="#client">Client</a><a href="#tools">Tools</a><a href="#updates">Updates</a><a href="#faq">FAQ</a>
+  </nav>
+  <a class="nav-cta" href="#client">Get started <span>↗</span></a>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-inner reveal">
+    <div class="eyebrow"><span class="live-dot"></span> Congerie · Torn utilities</div>
+    <h1>Play Torn.<br><span>Use better tools.</span></h1>
+    <p class="hero-copy">Torn Tools is the home for the Congerie client and the small utilities we build to make Torn easier to manage.</p>
+    <div class="hero-actions"><a class="button primary" href="#client">Explore the client <span>→</span></a><a class="button secondary" href="#tools">View tools <span>↓</span></a></div>
+    <div class="hero-meta"><span>ANDROID CLIENT</span><i></i><span>PRIVATE BETA</span><i></i><span>BUILT BY CONGERIE</span></div>
+  </div>
+  <div class="hero-side reveal"><div class="side-label">CURRENT BUILD</div><strong>0.1.2</strong><span>build 3</span><div class="side-line"></div><small>Clean interface<br>Live Torn data<br>Automatic updates</small></div>
+</section>
+<section class="section client-section" id="client">
+  <div class="section-top"><div><span class="section-index">01</span><p class="kicker">THE CLIENT</p><h2>Congerie for Torn</h2></div><p class="section-intro">A focused Android companion built around the information you actually need while playing.</p></div>
+  <div class="client-card reveal">
+    <div class="client-copy"><div class="status-label"><span class="live-dot"></span> PRIVATE BETA</div><h3>Your Torn dashboard, simplified.</h3><p>Connect your Torn API key and get a fast overview of your player data, with focused views for profile, travel, bars, inventory, faction and market information.</p><div class="feature-pills"><span>Live player data</span><span>Responsive UI</span><span>Secure API storage</span><span>Automatic updates</span></div></div>
+    <div class="client-preview" aria-hidden="true"><div class="preview-top"><span>CONGERIE</span><span>0.1.2</span></div><div class="preview-title">Dashboard</div><div class="preview-stats"><div><small>ENERGY</small><b>1000</b><span>FULL</span></div><div><small>NERve</small><b>150</b><span>FULL</span></div><div><small>HAPPY</small><b>5000</b><span>HIGH</span></div></div><div class="preview-row"><span>Level</span><b>100</b></div><div class="preview-row"><span>Travel</span><b>Home</b></div><div class="preview-row"><span>City</span><b>Los Santos</b></div></div>
+  </div>
+  <div class="download-strip"><div><span class="mini-label">LATEST RELEASE</span><strong>Version 0.1.2 <em>· build 3</em></strong><small>Release download will be enabled when the public APK is connected.</small></div><a class="button secondary disabled" href="#" aria-disabled="true">Download APK <span>↓</span></a></div>
+</section>
+<section class="section" id="tools">
+  <div class="section-top"><div><span class="section-index">02</span><p class="kicker">TOOLS</p><h2>Useful. Focused. No clutter.</h2></div><p class="section-intro">Small web utilities can live here alongside the client as they become ready.</p></div>
+  <div class="tool-grid">
+    <article class="tool-card featured reveal"><div class="tool-head"><span class="tool-icon">T</span><span class="tag">IN BETA</span></div><div class="tool-number">01</div><h3>Congerie Client</h3><p>Your main Torn companion for player information and everyday navigation.</p><a href="#client">View client <span>→</span></a></article>
+    <article class="tool-card reveal"><div class="tool-head"><span class="tool-icon">⌁</span><span class="tag muted">COMING SOON</span></div><div class="tool-number">02</div><h3>Player Utilities</h3><p>Quick tools for calculations, checks and common Torn tasks without opening extra tabs.</p><span class="tool-note">Web tools will appear here.</span></article>
+    <article class="tool-card reveal"><div class="tool-head"><span class="tool-icon">+</span><span class="tag muted">PLANNED</span></div><div class="tool-number">03</div><h3>More Tools</h3><p>New utilities will be added as they are built, tested and ready to use.</p><span class="tool-note">One useful tool at a time.</span></article>
+  </div>
+</section>
+<section class="section updates-section" id="updates">
+  <div class="section-top"><div><span class="section-index">03</span><p class="kicker">UPDATES</p><h2>What's new</h2></div><p class="section-intro">A simple record of the client so you always know what changed.</p></div>
+  <div class="timeline">
+    <article class="timeline-item current reveal"><div class="timeline-marker"></div><div class="timeline-date">SEP 2026 <span>CURRENT</span></div><div class="timeline-content"><div class="version-line"><h3>0.1.2 · Build 3</h3><span>Android</span></div><p>Client foundation with Torn API connection, live dashboard data, profile and travel views, bars, inventory, faction and market foundations, plus automatic update support.</p></div></article>
+    <article class="timeline-item reveal"><div class="timeline-marker"></div><div class="timeline-date">NEXT</div><div class="timeline-content"><div class="version-line"><h3>More Torn tools</h3><span>Planned</span></div><p>Web utilities and additional client features will be added here as they are finished.</p></div></article>
+  </div>
+</section>
+<section class="section faq-section" id="faq">
+  <div class="section-top"><div><span class="section-index">04</span><p class="kicker">FAQ</p><h2>Questions, answered.</h2></div><p class="section-intro">The basics, without a wall of text.</p></div>
+  <div class="faq-list">
+    <details><summary>What is Torn Tools?<span>+</span></summary><p>Torn Tools is the public home for Congerie's Torn client and future player utilities.</p></details>
+    <details><summary>What is the Congerie client?<span>+</span></summary><p>It is an Android companion that connects to Torn's API and presents useful player information in a focused interface.</p></details>
+    <details><summary>Is the client free?<span>+</span></summary><p>The current build is a private beta. Release and access details will be posted here when the public build is ready.</p></details>
+    <details><summary>How do updates work?<span>+</span></summary><p>The Android client includes an automatic update system. This website is designed to host the public release manifest and APK.</p></details>
+  </div>
+</section>
+<section class="section final-cta"><div class="cta-card reveal"><div><p class="kicker">CONGERIE · TORN</p><h2>Built for the way<br>you actually play.</h2></div><a class="button primary" href="#client">Explore Congerie <span>↗</span></a></div></section>
+</main>
+<footer><div><a class="brand" href="#top"><span class="brand-mark">T</span><span>Torn Tools</span></a><p>Tools and utilities by Congerie Studios.</p></div><div class="footer-links"><a href="#client">Client</a><a href="#tools">Tools</a><a href="#updates">Updates</a><a href="#faq">FAQ</a></div><div class="footer-copy">© 2026 Congerie Studios<br><span>Torn Tools</span></div></footer>
+<script src="script.js" defer></script>
 </body>
 </html>
